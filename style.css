@@ -41,12 +41,19 @@ main{
     font-size: 1.5em;
     width: 75%;
     border: none;
+    outline: none;
 }
 
 
 #add-task-area button{
     font-size: 1.5em;
     border: none;
+    background-color: white;
+    font-weight: bold;
+}
+
+#add-task-area button:hover{
+    cursor: pointer;
 }
 
 #display-task-area{
