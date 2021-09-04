@@ -57,12 +57,46 @@ function createNewTask(){
 
         // add new task to the HTML document 
         task_container.insertAdjacentElement("beforeend",new_task_box);
+
+        //add eventListener to newly created elements
+        confirmDoneTask();
+
+        
    }
    else{
        alert("You Didn't Enter a Task");
    }
     
 }
+
+
+//confirm done task on the list
+function confirmDoneTask(){
+    // all the radio btn from created task 
+    let all_radio_btn = document.querySelectorAll(`input[type = "radio"]`);
+
+    // all label for radio btn from the created task 
+    let all_label = document.querySelectorAll("label");
+    
+    //loop through radio btn
+    all_radio_btn.forEach((btn)=>{
+        
+        // add addEventListener to each radio btn 
+        btn.addEventListener("click", ()=>{
+            if(btn.checked){
+                //loop through radio btn label
+                all_label.forEach((label)=>{
+                    //style the label of the checked radio btn
+                    if(label.htmlFor === btn.value){
+                        label.style.textDecoration = "line-through";
+                        label.style.color = "red";
+                    }
+                })
+            }
+        })
+    })
+}
+
 
 //clear all the available task on the list
 function clearAllTask(){
@@ -74,7 +108,6 @@ function clearAllTask(){
     hideTaskContainer();
     hideClearTaskButton();
 }
-
 
 
 // envoke functions 

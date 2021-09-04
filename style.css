@@ -1,7 +1,3 @@
-/* *{
-    margin: 0px;
-    padding: 0px;
-} */
 body{
     width: 98vw;
     height: 97vh;
@@ -15,6 +11,7 @@ body{
 header h1{
     color: white;
 }
+
 #container{
     /* background-color: red; */
     display: flex;
@@ -43,7 +40,6 @@ main{
     border: none;
     outline: none;
 }
-
 
 #add-task-area button{
     font-size: 1.5em;
