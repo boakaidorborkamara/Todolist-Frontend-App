@@ -57,6 +57,7 @@ main{
 }
 
 #display-task-area{
+    display: none;
     width: 80%;
     background-color: white;
     padding: 30px;
@@ -68,5 +69,10 @@ main{
 }
 
 footer p{
+    display: none;
     color: white;
+}
+
+footer p:hover{
+    cursor: pointer;
 }
