@@ -72,3 +72,38 @@ footer p{
 footer p:hover{
     cursor: pointer;
 }
+
+@media screen and (max-width:768px ) {
+    #container{
+        width: 90vw;
+    }
+
+    #add-task-area input{
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width:425px ) {
+    #container{
+        width: 90vw;
+    }
+
+    #add-task-area input{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:320px ) {
+    #container{
+        width: 90vw;
+    }
+
+    #add-task-area input{
+        width: 68%;
+    }
+
+    #add-task-area input{
+        font-size: 1.2em;
+    }
+}
